@@ -20,20 +20,20 @@ lazy val root = (project in file("."))
       "org.typelevel"          %% "cats-core"           % "2.2.0-M1",
       "org.typelevel"          %% "cats-effect"         % "2.1.3",
       "org.systemfw"           %% "upperbound"          % "0.3.0",
-      "io.laserdisc"           %% "log-effect-core"     % "0.11.1",
-      "io.laserdisc"           %% "log-effect-fs2"      % "0.11.1",
+      "io.laserdisc"           %% "log-effect-core"     % "0.12.2",
+      "io.laserdisc"           %% "log-effect-fs2"      % "0.12.2",
       "org.slf4j"              % "slf4j-api"            % "1.7.28",
       "org.http4s"             %% "http4s-blaze-client" % "0.21.4",
       "org.http4s"             %% "http4s-circe"        % "0.21.4",
       "io.lemonlabs"           %% "scala-uri"           % "2.2.0",
-      "com.beachape"           %% "enumeratum"          % "1.5.13",
-      "com.beachape"           %% "enumeratum-circe"    % "1.5.22",
+      "com.beachape"           %% "enumeratum"          % "1.6.0",
+      "com.beachape"           %% "enumeratum-circe"    % "1.6.0",
       "com.chuusai"            %% "shapeless"           % "2.3.3",
       "joda-time"              % "joda-time"            % "2.10.6",
       "org.slf4j"              % "slf4j-simple"         % "1.7.28" % "test",
       "org.scalatest"          %% "scalatest"           % "3.0.8" % "test",
-      "io.circe"               %% "circe-parser"        % "0.12.2" % "test",
-      "com.github.tomakehurst" % "wiremock"             % "2.25.0" % "test"
+      "io.circe"               %% "circe-parser"        % "0.13.0" % "test",
+      "com.github.tomakehurst" % "wiremock"             % "2.26.3" % "test"
     )
   )
   .enablePlugins(AutomateHeaderPlugin)

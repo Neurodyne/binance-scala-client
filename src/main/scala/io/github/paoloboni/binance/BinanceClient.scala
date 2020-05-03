@@ -207,13 +207,12 @@ object BinanceClient {
           )
           requestLimits = rateLimits
             .filter(_.rateLimitType == RateLimitType.REQUEST_WEIGHT)
-            .map(
-              limit =>
-                Rate(limit.limit, limit.interval match {
-                  case SECOND => limit.intervalNum.seconds
-                  case MINUTE => limit.intervalNum.minutes
-                  case DAY    => limit.intervalNum.days
-                })
+            .map(limit =>
+              Rate(limit.limit, limit.interval match {
+                case SECOND => limit.intervalNum.seconds
+                case MINUTE => limit.intervalNum.minutes
+                case DAY    => limit.intervalNum.days
+              })
             )
         } yield requestLimits
 
